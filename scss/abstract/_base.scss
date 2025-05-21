@@ -1,5 +1,6 @@
-@use "../utilidades/variables" ;
-@use "..//utilidades/mixins";
+@use "..//abstract/variables" ;
+@use "..//abstract/mixins";
+
 body {
     font-family: variables.$fuente-principal;
     background-color: variables.$color-secundario;
