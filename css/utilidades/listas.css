@@ -1,0 +1,72 @@
+.icon-instagram {
+  width: 30px;
+  height: auto;
+  background-image: url("../imagenes/instagram-icon.png.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.icon-instagram:hover {
+  filter: brightness(0.8);
+}
+
+.icon-tiktok {
+  width: 30px;
+  height: auto;
+  background-image: url("../imagenes/tiktok-icon.png.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.icon-tiktok:hover {
+  filter: brightness(0.8);
+}
+
+.icon-facebook {
+  width: 30px;
+  height: auto;
+  background-image: url("../imagenes/facebook-icon.png.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.icon-facebook:hover {
+  filter: brightness(0.8);
+}
+
+.icon-mail {
+  width: 30px;
+  height: auto;
+  background-image: url("../imagenes/mail-icon.png.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.icon-mail:hover {
+  filter: brightness(0.8);
+}
+
+/*.p-md	padding en todos los lados
+.pt-sm	padding arriba
+.pb-sm	padding abajo
+.px-lg	padding izquierda y derecha
+.py-xl	padding arriba y abajo
+.m-sm	margin en todos los lados
+.mt-xs	margin arriba
+.mb-md	margin abajo
+.mx-lg	margin izquierda y derecha
+.my-xl	margin arriba y abajo*/
+
+/*# sourceMappingURL=listas.css.map */
