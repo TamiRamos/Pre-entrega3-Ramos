@@ -1,0 +1,101 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixins";
+@use "../utilidades/animaciones" as anims;
+footer {
+    background-color: variables.$color-primario;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    @include mixins.flex-footer;
+    color: variables.$color-texto;
+    .footer__navegacion {
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    .footer__contacto {
+      background-color: #e80861;
+      width: 90%;
+      max-width: 600px;
+      margin: 15px auto;
+      border: 2px solid palevioletred;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .telefono {
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      @include anims.anim-zoom(2s);
+     
+    }
+    .footer__seguinos {
+
+      padding-top: 10px;
+      width: 100%;
+      text-align: center;
+      .seguinos__redes {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        a img {
+          width: 30px;
+          height: auto;
+          transition: transform 0.2s ease;
+        }
+        .seguinos__redes a:hover img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .footer__envios {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      h3 {
+
+        margin-bottom: 15px;
+      
+      }
+      .envios__logos {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 30px;
+        /* espacio entre logos */
+        flex-wrap: wrap;
+        /* permite que bajen si no entran */
+        img {
+          width: 70px;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+    .container__mediosdepago {
+      width: 100%;
+      height: auto;
+      padding-top: 15px;
+      h3 {
+        padding-top: 20px;
+      }
+      .mediospago__logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2px;
+        flex-wrap: wrap;
+        img{
+          max-width: 50px;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
+      }
+      
+    }
+  }
+  

@@ -1,0 +1,73 @@
+@use "..//utilidades/variables";
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  @mixin size($width, $height) {
+    width: $width;
+    height: $height;
+  }
+  @mixin position-container {
+    overflow: visible;
+    position: relative;
+  }
+  @mixin text-aling{
+    text-align: center;
+    text-align: justify;
+  }
+  @mixin titulo($size: 2rem) {
+    font-size: $size;
+    font-weight: bold;
+    text-align: center;
+  }
+  @mixin title-pink{
+   font-size: 23px;
+   color: variables.$color-title;
+   margin-bottom: 30px;
+   font-weight: bold;
+  }
+  @mixin hover-style{ 
+      background-color: variables.$color-secundario !important;
+      color: variables.$color-texto!important;
+    }
+  @mixin grid($grid, $colum, $row){
+    display: grid;
+    grid-template-columns: $colum;
+    grid-template-rows: $row;
+    gap: 1rem;
+  }
+  @mixin style-formulario{
+
+  text-align: center;
+  border-style: solid;
+  border-color: variables.$color-border;
+  margin: auto;
+  margin-top: 20px;
+  border-style: 15px;
+  color: rgb(6, 6, 6);
+  max-width: 90%;
+  box-shadow: 0px 0px 45px palevioletred;
+  background-color: #fdf1f7;
+  .form__input {
+    padding: 6px 20px;
+  }
+  
+  .form__input input,
+  textarea {
+    width: 80%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-top: 15px;
+    border: none;
+    border: 1px solid #e80861;
+    box-shadow: 0px 0px 55px rgba(252, 171, 232, 0.6);
+  }
+  }
+  @mixin flex-footer{
+    display: flex;
+  flex-direction: column;
+  align-self: start;
+  }

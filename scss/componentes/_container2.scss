@@ -1,0 +1,26 @@
+/* container2 gradiente*/
+@use "../utilidades/mixins";
+@use "../utilidades/variables";
+.container2 {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    @include mixins.flex-center;
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 10%;
+    justify-content: center;
+    position: relative;
+    background-color: variables.$color-primario;
+    background-size: cover;
+  background-position: center;
+  position: relative;
+}
+    .container2__texto {
+      color: variables.$color-texto;
+     text-align: center;
+      position: absolute;
+      width: 300px;
+      padding-top: 20px;
+    }
+  

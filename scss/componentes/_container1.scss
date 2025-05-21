@@ -1,0 +1,19 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixins";
+.container1 {
+    width: 100%;
+    padding:2%;
+    
+  .container1__sobrenosotros p {
+    width: 99%;
+    @include mixins.text-aling;
+    margin-left: 2px;
+    font-size: variables.$font-size;
+  }
+  .container1__carrousel {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  
+  }
+}

@@ -1,0 +1,49 @@
+// Mapa con los nombres y archivos de los iconos
+$redes: (
+  instagram: 'instagram-icon.png.png',
+  tiktok: 'tiktok-icon.png.png',
+  facebook: 'facebook-icon.png.png',
+  mail: 'mail-icon.png.png'
+);
+
+// Generar clases para cada icono con background-image
+@each $nombre, $archivo in $redes {
+  .icon-#{$nombre} {
+    width: 30px;
+    height: auto;
+    background-image: url('../imagenes/#{$archivo}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
+
+
+
+
+
+
+$spacings: (
+  xs: 0.25rem,
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 2rem,
+  xl: 3rem
+);
+/*.p-md	padding en todos los lados
+.pt-sm	padding arriba
+.pb-sm	padding abajo
+.px-lg	padding izquierda y derecha
+.py-xl	padding arriba y abajo
+.m-sm	margin en todos los lados
+.mt-xs	margin arriba
+.mb-md	margin abajo
+.mx-lg	margin izquierda y derecha
+.my-xl	margin arriba y abajo*/

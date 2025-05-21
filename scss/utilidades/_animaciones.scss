@@ -1,0 +1,20 @@
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); // Hace el zoom
+  }
+  100% {
+    transform: scale(1); // Vuelve al tamaño original
+  }
+}
+
+@mixin anim-zoom($duration: 1.5s, $timing: ease-in-out, $repeat: infinite) {
+  animation: zoom-in-out $duration $timing $repeat;
+}
+
+
+@mixin anim-slide-left($duration: 0.10s, $timing: ease) {
+  animation: slide-left $duration $timing both;
+}

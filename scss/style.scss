@@ -1,0 +1,18 @@
+@use 'utilidades/variables';
+@use 'utilidades/mixins';
+@use 'utilidades/reset';
+@use 'utilidades/base';
+
+
+@use 'layout/responsive';
+
+@use 'componentes/main';
+@use 'componentes/container1';
+@use 'componentes/accordion';
+@use 'componentes/container2';
+@use 'componentes/formulario';
+@use 'componentes/footer';
+@use 'componentes/producto-card';
+@use 'componentes/producto-individual';
+@use 'componentes/oferta';
+@use "utilidades/animaciones" as anims;
