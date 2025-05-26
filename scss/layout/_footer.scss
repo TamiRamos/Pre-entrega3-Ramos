@@ -1,0 +1,97 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+@use "../utilidades/flex-utils";
+@use "../utilidades/animaciones";
+
+.footer__navegacion {
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+.footer__contacto {
+    background-color: variables.$color-destacado;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px auto;
+    @include mixins.style-border;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+.telefono {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  
+      @include animaciones.animacion(zoomInStrong, 1.2s, ease-in-out, true);
+    
+    
+  }
+
+.footer__seguinos {
+
+    padding-top: 10px ;
+    width: 100%;
+    text-align: start;
+    
+    .seguinos__redes {
+        gap: 10px;
+        @extend .flex-around-center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        a img {
+            width: 30px;
+            height: auto;
+            transition: transform 0.2s ease;
+          }
+        a:hover img {
+            transform: scale(1.1);
+          }
+      }
+      
+  }
+
+.footer__envios {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    h3 {
+        margin-bottom: 15px;
+      }
+      
+  }
+  
+.envios__logos {
+    @extend .flex-start-center;
+    gap: 30px;
+    /* espacio entre logos */
+    flex-wrap: wrap;
+    /* permite que bajen si no entran */
+   img {
+        @include mixins.size(70px, auto);
+        transition: transform 0.3s ease;
+      }
+  }
+  
+.container__mediosdepago { 
+
+    @include mixins.size(100%, auto);
+    padding-top: 15px;
+    h3 {
+        padding-top: 20px;
+      }
+  }
+  
+.mediospago__logos {
+    @extend .flex-around-center;
+    gap: 2px; 
+    flex-wrap: wrap;
+    img {
+        max-width: 50px;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+  }
+  
+ 
+  

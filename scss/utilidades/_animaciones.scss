@@ -1,0 +1,24 @@
+// Mixin de animación con opción de loop infinito
+@mixin animacion($nombre, $duracion: 0.6s, $easing: ease-out, $infinito: false) {
+    
+    @if $nombre == zoomInStrong {
+      @keyframes zoomInStrong {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+      }
+    }
+  
+    animation: $nombre $duracion $easing;
+    animation-fill-mode: both;
+  
+    @if $infinito {
+      animation-iteration-count: infinite;
+    }
+  }
+  

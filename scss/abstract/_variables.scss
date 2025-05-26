@@ -1,13 +1,21 @@
+
 // _variables.scss
 $color-primario: #f5a9bc;
 $color-secundario: #febbd1;
 $color-texto: #333;
-$fuente-principal: 'Poppins', sans-serif;
-$transicion: all 0.3s ease-in-out;
-$font-size: 16px;
+$color-destacado: rgb(234, 9, 144);
 $color-acordion: rgb(254, 155, 206);
 $color-holder: rgb(247, 59, 125);
-$box-shadow: 0px 0px 45px palevioletred !important;
 $color-title :
  #d63384;
+
+//border-shadow
+$box-shadow: 0px 0px 45px palevioletred !important;
 $color-border:rgb(247, 138, 229);
+
+//fuentes
+$fuente-principal: 'Poppins', sans-serif;
+$font-size: 16px;
+
+//transiciones
+$transicion: all 0.3s ease-in-out;

@@ -1,0 +1,110 @@
+@use "../abstract/mixins";
+@use "../utilidades/flex-utils";
+
+@media (min-width: 1024px) {
+  .container1 {
+    @include mixins.size(95%, auto);
+    padding: 10px 5px 0;
+    margin: auto;
+    @include mixins.flex(space-between, center, row, wrap);
+  }
+
+  .container1__sobrenosotros,
+  .container1__carrousel {
+    width: 48%;
+    @include mixins.flex(center, center, column);
+  }
+
+  .container1__carrousel {
+    width: 45%;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  .container2 {
+    max-height: 250px;
+    margin: auto;
+  }
+
+  .container2__texto {
+    width: 90%;
+    min-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+
+    h3 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .form__contacto {
+    max-width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    font-size: 18px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .form__input input,
+  .form__input textarea {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .seguinos__redes,
+  .envios__logos,
+  .mediospago__logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: start;
+
+    img {
+      width: 60px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .seguinos__redes {
+    gap: 10px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+
+  main {
+    margin-bottom: 20px;
+  }
+
+  html,
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}

@@ -5,6 +5,7 @@ body {
     font-family: variables.$fuente-principal;
     background-color: variables.$color-secundario;
     color: variables.$color-texto;
+
   }
   html, body{
     height: auto;
@@ -17,4 +18,18 @@ body {
   main{
     background-color: variables.$color-secundario;
     @include mixins.position-container;
-    max-width: 100%;}
+    max-width: 100%;
+    
+    }
+   
+    .footer {
+      width: 100%;
+      height: auto;
+      padding: 30px 20px;
+      background-color: #ff69b4 ;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+    
+    }

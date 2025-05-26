@@ -1,17 +1,527 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use 'utilidades/variables';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use 'utilidades/variables';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 1:1  root stylesheet";
+.flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+.flex-start-center, .envios__logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-start-end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.flex-start-stretch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.flex-start-baseline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.flex-center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-center-center, .container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-center-stretch {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-center-baseline {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.flex-end-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-end-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-end-stretch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.flex-end-baseline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex-between-stretch {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.flex-between-baseline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flex-around-start {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex-around-center, .footer__seguinos .seguinos__redes, .mediospago__logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-around-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-around-stretch {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.flex-around-baseline {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.flex-evenly-start {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-evenly-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-evenly-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.flex-evenly-stretch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.flex-evenly-baseline {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.footer__navegacion {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer__contacto {
+  background-color: rgb(234, 9, 144);
+  width: 90%;
+  max-width: 600px;
+  margin: 15px auto;
+  border: 2px solid;
+  border-color: rgb(247, 138, 229);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.telefono {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  animation: zoomInStrong 1.2s ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes zoomInStrong {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.footer__seguinos {
+  padding-top: 10px;
+  width: 100%;
+  text-align: start;
+}
+.footer__seguinos .seguinos__redes {
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footer__seguinos .seguinos__redes a img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.footer__seguinos .seguinos__redes a:hover img {
+  transform: scale(1.1);
+}
+
+.footer__envios {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer__envios h3 {
+  margin-bottom: 15px;
+}
+
+.envios__logos {
+  gap: 30px;
+  /* espacio entre logos */
+  flex-wrap: wrap;
+  /* permite que bajen si no entran */
+}
+.envios__logos img {
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.container__mediosdepago {
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+}
+.container__mediosdepago h3 {
+  padding-top: 20px;
+}
+
+.mediospago__logos {
+  gap: 2px;
+  flex-wrap: wrap;
+}
+.mediospago__logos img {
+  max-width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .container1 {
+    width: 95%;
+    height: auto;
+    padding: 10px 5px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container1__sobrenosotros,
+  .container1__carrousel {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container1__carrousel {
+    width: 45%;
+  }
+  .container1__carrousel img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+  .container2 {
+    max-height: 250px;
+    margin: auto;
+  }
+  .container2__texto {
+    width: 90%;
+    min-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .container2__texto h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .form__contacto {
+    max-width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    font-size: 18px;
+  }
+  .form__contacto h2 {
+    font-size: 24px;
+  }
+  .form__input input,
+  .form__input textarea {
+    width: 90%;
+    font-size: 16px;
+  }
+  .seguinos__redes,
+  .envios__logos,
+  .mediospago__logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: start;
+  }
+  .seguinos__redes img,
+  .envios__logos img,
+  .mediospago__logos img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+  }
+  .seguinos__redes {
+    gap: 10px;
+  }
+  .seguinos__redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .seguinos__redes img {
+    width: 40px;
+  }
+  main {
+    margin-bottom: 20px;
+  }
+  html,
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #febbd1;
+  color: #333;
+}
+
+html, body {
+  height: auto;
+  overflow: visible;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  background-color: #febbd1;
+  overflow: visible;
+  position: relative;
+  max-width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #ff69b4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+.container1 {
+  width: 95%;
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+.container1__sobrenosotros {
+  padding-left: 8px;
+}
+.container1__sobrenosotros h5 {
+  padding-top: 10px;
+  font-weight: 500;
+  color: black;
+}
+.container1__sobrenosotros h5 p {
+  width: 90%;
+  text-align: center;
+  text-align: justify;
+  margin-left: 10px;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.container1__sobrenosotros .container1__carrousel {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+
+/* container2 gradiente*/
+.container2 {
+  width: 100%;
+  height: 500px;
+  color: black;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to top, rgba(241, 125, 167, 0.6), rgba(245, 32, 156, 0.6)), url(./imagenes/estudio.png.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.container2 .container2__texto {
+  width: 300px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container__acordion {
+  margin: 60px auto;
+  width: 90%;
+  max-height: 350px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding: 30px;
+  background-color: #fdf1f7;
+  border-radius: 12px;
+  box-shadow: 0px 0px 45px palevioletred !important;
+}
+
+.container__acordion h5 {
+  font-size: 28px;
+  color: #d63384;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: aliceblue !important;
+}
+
+.accordion-button:hover {
+  background-color: rgba(247, 175, 203, 0.1) !important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.form__contacto {
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(247, 138, 229);
+  margin: auto;
+  margin-top: 20px;
+  border-style: 15px;
+  color: rgb(6, 6, 6);
+  max-width: 90%;
+  box-shadow: 0px 0px 45px palevioletred;
+  background-color: #fdf1f7;
+}
+.form__contacto .form__input {
+  padding: 6px 20px;
+}
+.form__contacto .form__input input,
+.form__contacto textarea {
+  width: 80%;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-top: 15px;
+  border: none;
+  border: 1px solid #e80861;
+  box-shadow: 0px 0px 55px rgba(252, 171, 232, 0.6);
+}
+
+/*# sourceMappingURL=style.css.map */

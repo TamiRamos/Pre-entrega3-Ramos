@@ -1,0 +1,26 @@
+$justify-options: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+$align-options: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  stretch: stretch,
+  baseline: baseline
+);
+
+@each $justify-name, $justify-value in $justify-options {
+  @each $align-name, $align-value in $align-options {
+    .flex-#{$justify-name}-#{$align-name} {
+      display: flex;
+      justify-content: #{$justify-value};
+      align-items: #{$align-value};
+    }
+  }
+}

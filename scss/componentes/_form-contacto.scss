@@ -1,0 +1,7 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+@use "../utilidades/flex-utils";
+
+.form__contacto {
+ @include mixins.style-formulario;
+}
