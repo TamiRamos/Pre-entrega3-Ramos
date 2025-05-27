@@ -1,0 +1,12 @@
+@use "..//abstract/variables";
+.oferta-style{
+  font-size: 1.5rem;
+  color: variables.$color-oferta;
+  font-weight: bold;
+}
+.precio-anterior-style{
+ font-size: 1.2rem;
+      color: variables.$color-title;
+      text-decoration: line-through;
+}
+

@@ -1,0 +1,50 @@
+@use "..//abstract/variables";
+@use "..//abstract/mixins";
+@use "..//utilidades/flex-utils";
+//productos 
+.producto__detalle {
+ 
+  padding: 2rem;
+  @extend.flex-around-center;
+}
+
+.producto__imagen img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.producto__info {
+    max-width: 500px;
+    padding: 1rem; 
+    h1 {
+        color: variables.$color-title;
+        margin-bottom: 1rem;
+}}
+
+.producto__precio {
+    font-size: 1.2rem;
+    color: variables.$color-title;
+    margin-bottom: 1rem;
+}
+
+.producto__descripcion {
+    margin-bottom: 1.5rem;
+}
+/* Detalles adicionales */
+.producto__detalles__adicionales {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  h2 {
+    color: variables.$color-title;
+    margin-bottom: 1rem;}
+    ul {
+        list-style: none;
+        padding-left: 1.5rem;}
+        li {
+            margin-bottom: 0.5rem;}
+}
+
+

@@ -1,0 +1,23 @@
+@use "..//abstract/mixins";
+//carrito de compras
+.carrito-box {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #fc6fbf;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.list-group-item h6 {
+  font-size: 1rem;
+}
+
+.botones-carrito
+.botones{
+  border-radius: 20px;
+  @include  mixins.button-añadir-carrito;
+}

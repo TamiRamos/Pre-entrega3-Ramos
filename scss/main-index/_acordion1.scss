@@ -1,0 +1,61 @@
+
+@use "..//abstract/variables";
+.container__acordion {
+  margin: 60px auto;
+  width: 90%;
+  max-height: 350px;
+  overflow-y: scroll;
+  padding: 30px 10px 30px 30px;
+  background-color: #bb045d8f;
+  border-radius: 12px;
+  box-shadow: 0px 0px 45px palevioletred;
+
+  h5 {
+    font-size: 28px;
+    color: variables.$color-acordion;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: aliceblue;
+  }
+
+  .accordion-button {
+  background-color: #fff;
+  color: variables.$color-destacado;
+  font-weight: bold;
+
+  &:hover {
+    background-color: variables.$color-primario;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  // Estado cuando está abierto (no colapsado)
+  &:not(.collapsed) {
+    background-color: #fff; 
+    color: #d63384;
+    box-shadow: none;
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff; 
+  color: variables.$color-destacado;
+  box-shadow: none; // quita el reflejo azul
+}
+
+.accordion-body {
+  background-color: #fff; // evita azul de fondo
+  box-shadow: none; // elimina cualquier sombreado azul
+}
+
+}

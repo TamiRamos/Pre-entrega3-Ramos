@@ -1,3 +1,4 @@
+
 .oferta-style {
   font-size: 1.5rem;
   color: #d70014;
@@ -212,13 +213,11 @@
   font-weight: bold;
   text-align: center;
 }
-
 .telefono {
   animation: zoomInStrong 1.2s ease-in-out;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
-
 @keyframes zoomInStrong {
   0%, 100% {
     transform: scale(1);
@@ -229,24 +228,22 @@
     opacity: 1;
   }
 }
+
 .footer__seguinos {
   padding-top: 10px;
   width: 100%;
   text-align: start;
 }
-
 .footer__seguinos .seguinos__redes {
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-
 .footer__seguinos .seguinos__redes a img {
   width: 30px;
   height: auto;
   transition: transform 0.2s ease;
 }
-
 .footer__seguinos .seguinos__redes a:hover img {
   transform: scale(1.1);
 }
@@ -255,7 +252,6 @@
   padding-top: 20px;
   padding-bottom: 15px;
 }
-
 .footer__envios h3 {
   margin-bottom: 15px;
 }
@@ -266,7 +262,6 @@
   flex-wrap: wrap;
   /* permite que bajen si no entran */
 }
-
 .envios__logos img {
   width: 70px;
   height: auto;
@@ -278,7 +273,6 @@
   height: auto;
   padding-top: 15px;
 }
-
 .container__mediosdepago h3 {
   padding-top: 20px;
 }
@@ -287,7 +281,6 @@
   gap: 2px;
   flex-wrap: wrap;
 }
-
 .mediospago__logos img {
   max-width: 50px;
   height: auto;
@@ -323,7 +316,7 @@
     height: auto;
     max-height: 80vh;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     display: block;
   }
   .container2 {
@@ -371,7 +364,7 @@
     width: 60px;
     height: auto;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     display: block;
     margin: 0;
   }
@@ -651,7 +644,7 @@ main {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
@@ -670,7 +663,6 @@ main {
   border-radius: 20px;
   font-size: 1rem;
 }
-
 .btn__comprar:hover {
   background-color: rgba(252, 5, 133, 0.902) !important;
   color: #333 !important;
@@ -687,13 +679,11 @@ main {
 .container1__sobrenosotros {
   padding-left: 8px;
 }
-
 .container1__sobrenosotros h5 {
   padding-top: 10px;
   font-weight: 500;
   color: black;
 }
-
 .container1__sobrenosotros h5 p {
   width: 90%;
   text-align: center;
@@ -703,7 +693,6 @@ main {
   padding-top: 10px;
   padding-left: 5px;
 }
-
 .container1__sobrenosotros .container1__carrousel {
   width: 100%;
   height: 80%;
@@ -722,7 +711,6 @@ main {
   background-position: center;
   position: relative;
 }
-
 .container2 .container2__texto {
   width: 300px;
   padding-top: 20px;
@@ -739,7 +727,6 @@ main {
   border-radius: 12px;
   box-shadow: 0px 0px 45px palevioletred;
 }
-
 .container__acordion h5 {
   font-size: 28px;
   color: rgb(254, 155, 206);
@@ -748,7 +735,6 @@ main {
   text-align: center;
   text-decoration: underline;
 }
-
 .container__acordion .accordion-item {
   border: none;
   margin-bottom: 15px;
@@ -756,33 +742,27 @@ main {
   overflow: hidden;
   background-color: aliceblue;
 }
-
 .container__acordion .accordion-button {
   background-color: #fff;
   color: rgb(234, 9, 144);
   font-weight: bold;
 }
-
 .container__acordion .accordion-button:hover {
   background-color: #f5a9bc;
 }
-
 .container__acordion .accordion-button:focus {
   box-shadow: none;
 }
-
 .container__acordion .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #d63384;
   box-shadow: none;
 }
-
 .container__acordion .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: rgb(234, 9, 144);
   box-shadow: none;
 }
-
 .container__acordion .accordion-body {
   background-color: #fff;
   box-shadow: none;
@@ -800,11 +780,9 @@ main {
   box-shadow: 0px 0px 45px palevioletred;
   background-color: #fdf1f7;
 }
-
 .form__contacto .form__input {
   padding: 6px 20px;
 }
-
 .form__contacto .form__input input,
 .form__contacto textarea {
   width: 80%;
@@ -843,7 +821,6 @@ main {
   border-radius: 20px;
   font-size: 1rem;
 }
-
 .botones-carrito .botones:hover {
   background-color: rgba(252, 5, 133, 0.902) !important;
   color: #333 !important;
@@ -858,7 +835,6 @@ main {
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px rgba(247, 138, 229, 0.2);
 }
-
 .producto__card :hover {
   transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(247, 138, 229, 0.4);
@@ -869,7 +845,6 @@ main {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .card-body .card-text {
   font-size: 0.95rem;
   color: #333;
@@ -898,7 +873,6 @@ main {
   margin: 2rem 0;
   border-radius: 8px;
 }
-
 .oferta__destacada .producto__imagen__oferta img {
   max-width: 100%;
   border-radius: 8px;
@@ -910,12 +884,10 @@ main {
   padding: 1rem;
   margin-left: 2rem;
 }
-
 .producto__info__oferta h1 {
   color: #d63384;
   margin-bottom: 1rem;
 }
-
 .producto__info__oferta .precio__original {
   margin-bottom: 0.5rem;
 }
@@ -923,7 +895,6 @@ main {
 .precio__oferta {
   margin-bottom: 1rem;
 }
-
 .precio__oferta .descripcion__oferta {
   margin-bottom: 1.5rem;
 }
@@ -942,7 +913,6 @@ main {
   max-width: 500px;
   padding: 1rem;
 }
-
 .producto__info h1 {
   color: #d63384;
   margin-bottom: 1rem;
@@ -966,19 +936,14 @@ main {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
 .producto__detalles__adicionales h2 {
   color: #d63384;
   margin-bottom: 1rem;
 }
-
 .producto__detalles__adicionales ul {
   list-style: none;
   padding-left: 1.5rem;
 }
-
 .producto__detalles__adicionales li {
   margin-bottom: 0.5rem;
-} 
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

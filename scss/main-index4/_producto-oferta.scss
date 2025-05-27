@@ -1,0 +1,40 @@
+@use "..//abstract/variables";
+@use "..//utilidades/flex-utils";
+@use "..//abstract/extends";
+
+
+  .oferta__destacada {
+  @extend.flex-center-center;
+  padding: 2rem;
+  background-color: white;
+  margin: 2rem 0;
+  border-radius: 8px;
+  
+
+.producto__imagen__oferta {
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}}
+}
+
+.producto__info__oferta {
+  max-width: 500px;
+  padding: 1rem;
+  margin-left: 2rem;
+  h1 {
+    color: variables.$color-title;
+    margin-bottom: 1rem;}
+    .precio__original {
+      @extend .precio-anterior-style;
+      margin-bottom: 0.5rem;
+}
+  }
+
+.precio__oferta {
+  @extend .oferta-style;
+  margin-bottom: 1rem;
+  .descripcion__oferta {
+    margin-bottom: 1.5rem;}
+  }

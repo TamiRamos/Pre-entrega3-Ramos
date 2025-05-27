@@ -69,4 +69,17 @@
       flex-direction: $direction;
       flex-wrap: $wrap;
     }
-    
+  @mixin button-añadir-carrito {
+  background-color: variables.$color-destacado !important;
+  color: white !important;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: variables.$color-hover !important;
+    color: variables.$color-texto !important;
+  }
+}

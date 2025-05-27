@@ -1,5 +1,6 @@
 @use "..//abstract/variables" ;
 @use "..//abstract/mixins";
+@use "..//utilidades/flex-utils";
 
 body {
     font-family: variables.$fuente-principal;
@@ -33,3 +34,46 @@ body {
       align-self: start;
     
     }
+    /*producto1*/
+
+/* Estilos generales producto1*/
+.body__producto1 {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf1f7;
+  color: #060606;
+  line-height: 1.6;
+}
+
+/* Productos relacionados */
+.productos__relacionados {
+  padding: 2rem;
+}
+
+.productos__relacionados h2 {
+  color: variables.$color-title;
+  margin-bottom: 1.5rem;
+}
+
+.galeria {
+  
+  @extend .flex-center-center;
+  gap: 1.5rem;
+ 
+}
+
+.producto {
+  text-align: center;
+}
+
+.producto img {
+
+  @include mixins.size(100px, 100px);
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.producto p {
+  color: #060606;
+  font-weight: bold;
+}

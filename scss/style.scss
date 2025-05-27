@@ -1,12 +1,9 @@
 @use 'abstract/variables';
 @use 'abstract/mixins';
 @use 'abstract/listas';
+@use 'abstract/extends';
 
-
-@use 'layout/main';
-@use 'layout/formulario';
 @use 'layout/footer';
-@use 'layout/header';
 @use 'layout/responsive-pc';
 
 @use 'base/reset';
@@ -14,7 +11,27 @@
 
 @use 'utilidades/flex-utils';
 @use 'utilidades/animaciones';
+@use 'utilidades/button';
 
-@use 'componentes/containers';
-@use 'componentes/acordion1';
-@use 'componentes/form-contacto';
+@use 'main-index/containers';
+@use 'main-index/acordion1';
+@use 'main-index/form-contacto';
+
+
+
+
+//index-2 seccion carrito-compras
+
+@use 'main-index2/carrito-compras';
+
+//index-3 seccion productos 
+@use 'main-index3/producto-card';
+
+
+
+//index-4 seccion ofertas-sale!
+@use 'main-index4/producto-oferta';
+
+
+//producto1 
+@use 'main-producto1/secccion_producto';

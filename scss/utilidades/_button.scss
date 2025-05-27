@@ -1,0 +1,6 @@
+@use "..//abstract/variables";
+@use "..//abstract/mixins";
+.btn__comprar {
+  @include mixins.button-añadir-carrito;
+ }
+
