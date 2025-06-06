@@ -23,7 +23,7 @@
 
 .producto__precio {
     font-size: 1.2rem;
-    color: variables.$color-title;
+    color: variables.$color-h1;
     margin-bottom: 1rem;
 }
 
@@ -32,13 +32,13 @@
 }
 /* Detalles adicionales */
 .producto__detalles__adicionales {
-  background-color: rgb(255, 255, 255);
+  background-color:	#f48fb1;
   padding: 2rem;
   margin: 2rem 0;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   h2 {
-    color: variables.$color-title;
+    color: variables.$color-h1;
     margin-bottom: 1rem;}
     ul {
         list-style: none;

@@ -13,11 +13,11 @@
 @use 'utilidades/animaciones';
 @use 'utilidades/button';
 
+//index-1 inicio
 @use 'main-index/containers';
+@use 'main-index/titulos';
 @use 'main-index/acordion1';
 @use 'main-index/form-contacto';
-
-
 
 
 //index-2 seccion carrito-compras
@@ -26,7 +26,6 @@
 
 //index-3 seccion productos 
 @use 'main-index3/producto-card';
-
 
 
 //index-4 seccion ofertas-sale!

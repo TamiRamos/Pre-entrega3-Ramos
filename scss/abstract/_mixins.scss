@@ -83,3 +83,13 @@
     color: variables.$color-texto !important;
   }
 }
+@mixin grid-responsive($cols-mobile: 1fr, $cols-desktop: 1fr 1fr, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: $cols-mobile;
+  gap: $gap;
+
+  @media (min-width: 768px) {
+    grid-template-columns: $cols-desktop;
+    align-items: center;
+  }
+}
