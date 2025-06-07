@@ -5,6 +5,6 @@
 .form__contacto {
  @include mixins.style-formulario;
   button{
-@include mixins.button-añadir-carrito;
+ @include mixins.button-añadir-carrito;
   }
 }

@@ -407,9 +407,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f48fb1;
   color: #333;
+  overflow-x: hidden;
 }
 
 html, body {
+  width: 100%;
   height: auto;
   overflow: visible;
   position: relative;
@@ -424,7 +426,7 @@ main {
   background-color: rgba(255, 255, 255, 0.6);
   overflow: visible;
   position: relative;
-  max-width: 100%;
+  width: 100%;
 }
 
 .footer {

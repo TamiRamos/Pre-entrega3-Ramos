@@ -6,11 +6,15 @@ body {
     font-family: variables.$fuente-principal;
     background-color: variables.$color-secundario;
     color: variables.$color-texto;
+    overflow-x: hidden;
+
   }
   html, body{
+    width: 100% ;
     height: auto;
     @include mixins.position-container;
   }
+  
   img {
     max-width: 100%;
     height: auto;
@@ -18,7 +22,7 @@ body {
   main{
     background-color: variables.$color-main;
     @include mixins.position-container;
-    max-width: 100%;
+    width: 100%;
     
     }
    
