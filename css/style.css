@@ -509,6 +509,7 @@ header {
 }
 .container1__sobrenosotros h5 {
   padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   color: black;
 }
@@ -518,7 +519,7 @@ header {
   text-align: justify;
   margin-left: 10px;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 5px;
 }
 .container1__sobrenosotros .container1__carrousel {
@@ -619,30 +620,89 @@ header {
 }
 
 .form__contacto {
-  text-align: center;
-  border-style: solid;
-  border-color: rgb(247, 138, 229);
-  margin: auto;
-  margin-top: 20px;
-  border-style: 15px;
-  color: rgb(6, 6, 6);
-  max-width: 90%;
-  box-shadow: 0px 0px 45px palevioletred;
-  background-color: #fdf1f7;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fdf1f7;
+  box-shadow: 0 0 30px rgba(219, 112, 147, 0.6);
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form__contacto h2 {
+  font-weight: 700;
+  color: #d74079;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(215, 64, 121, 0.6);
 }
 .form__contacto .form__input {
-  padding: 6px 20px;
-}
-.form__contacto .form__input input,
-.form__contacto textarea {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  background-color: transparent;
-  margin-top: 15px;
+  margin-bottom: 18px;
+}
+.form__contacto .form__input label {
+  flex: 1;
+  font-weight: 600;
+  color: #5a264a;
+  font-size: 1rem;
+  padding-right: 15px;
+  text-align: left;
+}
+.form__contacto .form__input input, .form__contacto .form__input textarea {
+  flex: 2;
+  padding: 8px 12px;
+  border: 1.5px solid #e80861;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(232, 8, 97, 0.4);
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+.form__contacto .form__input input:focus, .form__contacto .form__input textarea:focus {
+  outline: none;
+  border-color: #d74079;
+  box-shadow: 0 0 12px rgba(215, 64, 121, 0.7);
+}
+.form__contacto .form__input textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+@media (max-width: 600px) {
+  .form__contacto {
+    padding: 20px 15px;
+  }
+  .form__contacto .form__input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form__contacto .form__input label {
+    padding-right: 0;
+    margin-bottom: 6px;
+  }
+  .form__contacto .form__input input, .form__contacto .form__input textarea {
+    flex: unset;
+    width: 100%;
+  }
+  .form__contacto h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.form__contacto button {
+  background-color: rgb(234, 9, 144) !important;
+  color: white !important;
   border: none;
-  border: 1px solid #e80861;
-  box-shadow: 0px 0px 55px rgba(252, 171, 232, 0.6);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.form__contacto button:hover {
+  background-color: rgba(252, 5, 133, 0.902) !important;
+  color: #333 !important;
 }
 
 .carrito-box {
